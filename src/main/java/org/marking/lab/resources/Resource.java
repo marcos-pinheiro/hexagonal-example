@@ -6,8 +6,8 @@ public abstract class Resource {
 	
 	
 	protected void paginateResponse(Response response, long total, long limit, long offset) {
-		response.header("X-Total-Count", String.valueOf(total));
-		response.header("X-Response-Limit", String.valueOf(limit));
-		response.header("X-Response-Offset", String.valueOf(offset));
+		response.header("Total-Count", String.valueOf(total));
+		response.header("Response-Limit", String.valueOf(limit));
+		response.header("Response-Offset", String.valueOf(offset));
 	}
 }
